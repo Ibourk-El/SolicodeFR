@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+section .code {
+  width: 400px;
+  height: 100%;
+  background-color: black;
+}
+
+section .output {
+  width: 70%;
+  height: 100%;
+}
+
+section .output iframe {
+  width: 100%;
+  height: 90%;
+  overflow: scroll;
+  border-top: 2px solid #6610f2;
+}
+
+.btn {
+  width: 49%;
+  padding: 10px;
+  border: none;
+  color: #6610f2;
+  font-weight: 600;
+  margin: 0 0.5%;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #6610f2;
+}

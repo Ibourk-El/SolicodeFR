@@ -1,0 +1,89 @@
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-left: 1px solid var(--gray-light);
+  border-right: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
+}
+
+table thead {
+  background-color: var(--gray-light);
+}
+
+table tr th {
+  padding: 20px;
+}
+
+table tr th i {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 5px 3px;
+}
+
+.fa-js {
+  color: gold;
+}
+
+.fa-php {
+  color: #c404ff;
+}
+
+.fa-css3 {
+  color: #049bff;
+}
+
+.fa-database {
+  color: #0045ad;
+}
+
+.fa-html5 {
+  color: #e60000;
+}
+
+table tr th span {
+  display: inline-block;
+  width: 120px;
+  height: 8px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+table tr th span.bar-box {
+  background-color: var(--gray-light);
+  position: relative;
+  margin-left: 5px;
+}
+table tr th span.bar-box span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.bar div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+tbody tr th {
+  padding: 10px;
+}
+
+.bar i {
+  font-size: 16px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

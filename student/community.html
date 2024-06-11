@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- text editorlikes -->
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0/dist/quill.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/quill@2.0.0/dist/quill.snow.css"
+      rel="stylesheet"
+    />
+    <!-- font awsom  -->
+    <link rel="stylesheet" href="./../css/all.css" />
+    <link rel="stylesheet" href="./../css/all.min.css" />
+    <!--  -->
+
+    <!--  -->
+    <link rel="stylesheet" href="./../css/global.css" />
+    <link rel="stylesheet" href="./../css/community.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  <section class="main-style-section">
+    <aside>
+        <div class="user-box">
+          <div class="img-box">
+            <img class="user-img" id="user-img" src="" alt="" />
+          </div>
+          <h3 class="user-name" id="user-name"></h3>
+        </div>
+        <ul class="side-menu">
+          <li><i class="fa-solid fa-book-open-reader"></i><a href="./authoformation.html">Authformation</a></li>
+          <li><i class="fa-solid fa-list-check"></i></i><a href="./breifs.html">Breifs</a></li>
+          <li class="active"><i class="fa-solid fa-group-arrows-rotate"></i
+            ><a href="./community.html">Community</a></li>
+          <li><i class="fa-solid fa-code"></i><a href="./problem.html">Challenge</a></li>
+          <li><i class="fa-regular fa-newspaper"></i><a href="./article.html">Articles</a></li>
+          <li><i class="fa-regular fa-user"></i><a  href="./profile.html">Profile</a></li>
+        </ul>
+        <button id="logout">logout</button>
+      </aside>
+      <article class="community">
+        <div class="container" id="posts-container"></div>
+      </article>
+    </section> 
+    <section class="work add-post" id="work">
+      <button class="close-btn" id="close-btn">Close</button>
+      <div class="container">
+        <input type="hidden" id="post_id_input" />
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" />
+        <label for="body">post body</label>
+        <div id="editor" class="textarea"></div>
+        <label for="file" >img/video</label>
+        <input type="file" name="file[]" id="file" multiple/><br />
+        <button id="send-btn">Send</button>
+      </div>
+    </section>
+    <div class="btns">
+      <button id="filter-btn">Your Post</button>
+      <button id="add-btn">+</button>
+    </div>
+    <div id="notification" class="">
+      <p id="msg">msg dfsd sfdf sdf</p>
+    </div>
+
+    <script type="module" src="./../js/functions.js"></script>
+    <script type="module" src="./../js/postElement.js"></script>
+    <script type="module" src="./../js/community.js"></script>
+  </body>
+</html>

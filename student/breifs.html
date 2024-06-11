@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsom  -->
+    <link rel="stylesheet" href="./../css/all.css" />
+    <link rel="stylesheet" href="./../css/all.min.css" />
+    <!--  -->
+    <link rel="stylesheet" href="./../css/global.css" />
+    <link rel="stylesheet" href="./../css/yourTaskes.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main-style-section">
+      <aside>
+        <div class="user-box">
+          <div class="img-box">
+            <img id="user-img" src="" alt="" />
+          </div>
+          <h3 id="user-name"></h3>
+        </div>
+        <ul class="side-menu">
+          <li>
+            <i class="fa-solid fa-book-open-reader"></i
+            ><a href="./authoformation.html">Tutorials</a>
+          </li>
+          <li class="active">
+            <i class="fa-solid fa-list-check"></i
+            ><a href="./breifs.html">Breifs</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-group-arrows-rotate"></i
+            ><a href="./community.html">Community</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-code"></i
+            ><a href="./problem.html">Challenge</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-newspaper"></i
+            ><a href="./article.html">Articles</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-user"></i
+            ><a href="./profile.html">Profile</a>
+          </li>
+        </ul>
+        <button id="logout">logout</button>
+      </aside>
+      <article class="taskes-procese">
+        <ul class="courses-title">
+          <li class="course-catigory active">ALL</li>
+          <li class="course-catigory">HTML</li>
+          <li class="course-catigory">CSS</li>
+          <li class="course-catigory">Javascript</li>
+          <li class="course-catigory">PHP</li>
+          <li class="course-catigory">MySQL</li>
+        </ul>
+        <div class="breifs-container" id="breifs-container"></div>
+      </article>
+    </section>
+    <section class="work show-briefs" id="work">
+      <button class="close-btn" id="close-btn">Close</button>
+      <div class="container">
+        <h3 class="challenge-title" id="task-title"></h3>
+        <div class="challenge-body">
+          <div class="img-container">
+            <div class="main-box">
+              <img id="main-img" src="" alt="" />
+            </div>
+            <div class="all-img" id="all-img"></div>
+          </div>
+          <div class="text" id="task-text"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="github-box">
+      <button class="close-git" id="close-git">Close</button>
+      <div class="container">
+        <input
+          id="github-url"
+          type="text"
+          name="text"
+          placeholder="Enter Github URL of Task "
+        />
+        <button id="send-url-btn" class="send">Send</button>
+      </div>
+    </section>
+
+    <div id="notification" class="">
+      <p id="msg">msg dfsd sfdf sdf</p>
+    </div>
+
+    <script type="module" src="./../js/functions.js"></script>
+    <script type="module" src="./../js/yourTaskes.js"></script>
+  </body>
+</html>

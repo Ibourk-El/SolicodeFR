@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.container.table {
+  align-items: flex-start;
+}
+
+.task-container {
+  height: 100vh;
+  overflow-y: scroll;
+  align-items: flex-start;
+}
+
+.task-container .task {
+  height: fit-content;
+  padding: 10px;
+  min-width: 300px;
+  max-height: 250px;
+  border: 1px solid var(--gray-midel);
+  margin: 10px;
+  text-align: center;
+  background-color: var(--gray-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.task-container .img-box {
+  width: 90%;
+  margin: auto;
+  height: 150px;
+  position: relative;
+}
+.task-container .img-box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.task-container .task p {
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 10px 0px;
+}
+
+.task-container .task button {
+  padding: 10px;
+}
+
+.task-container .task button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.table-container {
+  width: 90%;
+}
+.table-container .title {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+table thead tr th {
+  background-color: var(--gray-dark);
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+table tbody tr {
+  background-color: #ccc;
+  text-align: center;
+}
+select {
+  width: 100%;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: var(--gray-midel);
+}
+table tbody tr th {
+  padding: 10px;
+}
+.btn {
+  cursor: pointer;
+  transition: 0.5s;
+  color: var(--main-color);
+}
+.btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+

@@ -1,0 +1,67 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0/dist/quill.snow.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./../css/global.css" />
+  <link rel="stylesheet" href="./../css/createBrief.css" />
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  </header>
+  <section class="main-style-section">
+    <aside>
+      <div class="user-box">
+        <div class="img-box">
+          <img src="" alt="" id="user-img" />
+        </div>
+        <h3 id="user-name"></h3>
+      </div>
+      <ul class="side-menu">
+        <li><a href="./briefs.html">Briefs</a></li>
+        <li class="active"><a href="./createBrief.html">Create Brief</a></li>
+        <li><a href="./createAutoformation.html">Create Formation...</a></li>
+        <li><a href="./dashboard.html"> Dashboard</a></li>
+      </ul>
+      <button id="logout">logout</button>
+    </aside>
+    <article class="container form">
+      <label for="">brief</label>
+      <select name="brief_catigory" id="brief_catigory">
+        <option value="">pleas select course name</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">PHP</option>
+        <option value="MySQL">MySQL</option>
+      </select>
+      <label for="title">Title</label>
+      <input name="title" id="title" /><br />
+      <label for="body">Task Body</label>
+      <!-- <textarea name="task_body" id="task_body"></textarea><br /> -->
+      <div id="editor" class="textarea">
+      </div>
+
+
+      <label for="file_path"> Images</label>
+      <input type="file" name="file[]" id="files" multiple /><br />
+
+      <label for="class_id">Class Id</label>
+      <input name="class_id" id="class_id" /><br />
+      <button id="send-btn">Send</button>
+      <p id="msg"></p>
+    </article>
+  </section>
+
+  <div id="notification" class="">
+    <p id="msg">msg dfsd sfdf sdf</p>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0/dist/quill.js"></script>
+  <!-- <script src="./../js/textEditor.js"></script> -->
+  <script type="module" src="./../js/functions.js"></script>
+  <script type="module" src="./../js/createBrief.js"></script>
+  </body>
+</html>

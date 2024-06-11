@@ -1,0 +1,7 @@
+#RewriteEngine On
+#RewriteBase /projects/PFE/solicode/student
+
+#RewriteCond %{REQUEST_FILEMNAME} !-d
+#RewriteCond %{REQUEST_FILEMNAME} !-f 
+
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

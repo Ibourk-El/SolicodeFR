@@ -1,0 +1,231 @@
+.taskes-procese {
+  overflow: hidden;
+}
+.courses-title {
+  display: flex;
+  background-color: var(--gray-light);
+  justify-content: center;
+}
+
+.courses-title li {
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.courses-title li:nth-child(1) {
+  margin-left: 10px;
+}
+
+.courses-title li:hover,
+.courses-title li.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.taskes-procese .breifs-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.taskes-procese .breifs-container .task {
+  height: fit-content;
+  padding: 10px;
+  min-width: 300px;
+  border: 1px solid var(--gray-midel);
+  margin: 10px;
+  text-align: center;
+  background-color: var(--gray-light);
+  border-radius: 10px;
+}
+
+.task {
+  border-radius: 10px;
+}
+
+.task:hover {
+  background-color: var(--gray-midel);
+}
+
+.task .img-box {
+  width: 90%;
+  margin: auto;
+  height: 150px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.task .img-box img {
+  border-radius: 10px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: absolute;
+}
+
+.taskes-procese .task p {
+  background-color: white;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  /* box-shadow: 0 0 10px 0px #eee; */
+}
+.taskes-procese .task .btnBoxTask {
+  background-color: transparent;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.taskes-procese .task button {
+  padding: 10px 0;
+  background-color: white;
+
+  font-weight: 500;
+  color: var(--text-color);
+  transition: 0.5s;
+  /* border-radius: 10px; */
+}
+
+.taskes-procese .task button:nth-child(1) {
+  width: 35%;
+}
+.taskes-procese .task button:nth-child(3) {
+  width: 28%;
+}
+.taskes-procese .task button:nth-child(2) {
+  width: 28%;
+}
+
+.taskes-procese .task button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.work .container .challenge-title {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  line-height: 1.7em;
+  margin-bottom: 30px;
+}
+
+.work .container .challenge-body {
+  margin: auto;
+}
+
+.work .container .challenge-body .text {
+  width: 100%;
+  line-height: 1.7em;
+  padding: 10px;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+.close-git {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--main-color);
+  background-color: white;
+  right: 18%;
+  top: 20px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.work.open .close-git {
+  visibility: visible;
+  z-index: 100;
+}
+
+.close-git:hover {
+  animation: vibration 1s linear;
+}
+
+#github-box.active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#github-box .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#github-box .container input {
+  padding: 10px;
+  width: 300px;
+}
+
+#github-box button.send {
+  padding: 10px;
+  color: var(--main-color);
+  font-weight: 600;
+  display: inline-block;
+  width: 300px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 1px solid;
+}
+
+#github-box button.send:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.img-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.main-box {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.main-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.all-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* background-color: #eee; */
+}
+
+.all-img img {
+  width: 50%;
+  height: 33%;
+  flex-shrink: 1;
+  margin-bottom: 1px;
+}
+
+#work.show-briefs {
+  background-color: #eee;
+}
+
+#work.show-briefs .container {
+  background-color: #eee;
+  list-style-type: circle;
+}
+
+#work.show-briefs .container ul{list-style-type: circle;}

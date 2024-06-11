@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="login" id="login">
+          <input
+            type="email"
+            name="email"
+            id="login_email"
+            placeholder="your email"
+          />
+          <input
+            type="password"
+            name="pwd"
+            id="login_pwd"
+            placeholder="password"
+          />
+        </div>
+        <button id="login-btn">Login</button>
+        <div class="signup" id="signup">
+          <input
+            type="text"
+            name="full_name"
+            id="full_name"
+            placeholder="full name"
+          />
+          <input type="email" name="email" id="email" placeholder="email" />
+          <input type="password" name="pwd" id="pwd" placeholder="password" />
+          <input type="password" name="pwd" id="pwd_r" placeholder="password" />
+          <input
+            type="text"
+            name="class_id"
+            id="class_id"
+            placeholder="class_id"
+          />
+          <div class="radio-group">
+            <label for="teacher">teacher: </label>
+            <input type="radio" name="who" id="teacher" />
+            <label for="student">student: </label>
+            <input type="radio" name="who" id="student" checked />
+          </div>
+          <input
+            type="text"
+            placeholder="Pleas Enter teachers code "
+            id="code"
+          />
+        </div>
+        <button id="signup-btn">Signup</button>
+        <a href="./forgetPassword.html">forget password</a>
+      </div>
+      <p style="color: red" id="msg"></p>
+    </section>
+    <div id="notification" class="">
+      <p id="msg">msg dfsd sfdf sdf</p>
+    </div>
+    <script type="module" src="./js/functions.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

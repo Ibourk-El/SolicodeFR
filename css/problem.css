@@ -1,0 +1,127 @@
+.problem .container {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.problem .container table {
+  margin: auto;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.problem .container table tbody tr {
+  border-bottom: 1px solid var(--gray-light-opacity);
+}
+
+.problem .container table tr th {
+  padding: 20px;
+  min-width: 150px;
+}
+
+.problem .container table thead {
+  background-color: var(--gray-light);
+}
+
+.problem .container table tr th.JS {
+  color: #ebc804;
+}
+.problem .container table tr th.php {
+  color: #3c17c0;
+}
+
+.problem .container table tr th:hover {
+  cursor: pointer;
+}
+
+/* challenge work */
+
+.work .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.work .container .text-part {
+  width: 50%;
+}
+
+.work .container .text {
+  width: 100%;
+  font-weight: bold;
+  line-height: 1.7em;
+  padding: 0 10px;
+}
+
+.expacted {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.challenge-title {
+  padding: 20px 0;
+}
+
+.work .container .code-part {
+  width: 50%;
+}
+
+.work .container .code-part .editor-header {
+  background-color: var(--gray-light);
+  padding: 10px 0;
+}
+
+.work .container .code-part .editor-header label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.work .container .code-part .editor-header select {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.run-btn {
+  padding: 10px 30px;
+  font-weight: bold;
+  color: white;
+  margin-left: 30px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+.run-btn:hover {
+  color: var(--main-color);
+  background-color: white;
+  border: 1px solid var(--main-color);
+}
+
+.code-part .editor-body {
+  width: 100%;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.code-part .output-code {
+  margin-top: 10px;
+  width: 100%;
+  height: 150px;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  background-color: #212121;
+  color: white;
+  transition: all 1s;
+}
+
+.code-part .output-code p {
+  padding: 10px;
+  background-color: #212125;
+}
+
+.valid {
+  color: var(--green-dark);
+}
+.invalid {
+  color: var(--red-dark);
+}

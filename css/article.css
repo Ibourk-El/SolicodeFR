@@ -1,0 +1,204 @@
+.articles .container {
+  margin: auto;
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.articles .container .article-box {
+  width: 320px;
+  height: 250px;
+  background-color: var(--gray-light);
+  padding: 10px;
+  margin: 1.5%;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.articles .container .article-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.articles .container .article-box:hover {
+  box-shadow: 1px 1px 10px 0 var(--gray-dark);
+}
+
+.articles .container .article-box .img-box {
+  width: 90%;
+  margin: auto;
+  height: 50%;
+  position: relative;
+}
+.articles .container .article-box .img-box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.articles .container .article-box .title {
+  margin-top: 10px;
+  text-align: center;
+  background-color: white;
+  padding: 15px 10px;
+  overflow: hidden;
+}
+
+.articles .container .article-box footer {
+  background-color: var(--gray-midel);
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles .container .article-box footer span {
+  display: inline-block;
+  color: var(--gray-dark);
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.show-article .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+/* .show-article .container .article-title {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  line-height: 1.7em;
+} */
+
+.show-article .container .article {
+  margin-top: 30px 0;
+  width: 60%;
+  margin: auto;
+}
+.show-article .container .article .article-title {
+  padding: 30px 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.show-article .container .article .article-img {
+  width: 100%;
+  height: 200px;
+}
+
+.show-article .container .article .article-body {
+  width: 100%;
+}
+
+.show-article .container .article .article-body .text {
+  width: 100%;
+  line-height: 1.7em;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.article-comment {
+  margin-top: 30px;
+}
+
+.article-form.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-form.container input {
+  padding: 10px;
+  width: 100%;
+}
+
+.article-form.container label {
+  margin-bottom: 10px;
+  color: var(--gray-dark);
+}
+
+.article-form.container .textarea {
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  overflow-y: scroll;
+}
+
+.article-form.container button#send {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--gray-midel);
+  font-weight: 600;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.article-form.container button#send:hover {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid white;
+}
+
+.container {
+  display: none;
+}
+
+.article-menu {
+  position: relative;
+  cursor: pointer;
+  display: none;
+  z-index: 10000000;
+}
+
+.article-menu.active {
+  display: block;
+}
+
+.article-menu i {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.article-menu i:hover {
+  background-color: var(--gray-midel);
+}
+
+.article-menu ul {
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: 100;
+}
+
+.article-menu ul.active {
+  display: block;
+}
+
+.article-menu ul li {
+  padding: 10px;
+  background-color: var(--gray-midel);
+}

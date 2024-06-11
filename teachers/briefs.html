@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/global.css" />
+    <link rel="stylesheet" href="./../css/briefs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main-style-section">
+      <aside>
+        <div class="user-box">
+          <div class="img-box">
+            <img class="user-img" id="user-img" src="" alt="" />
+          </div>
+          <h3 class="user-name" id="user-name">User Name</h3>
+        </div>
+        <ul class="side-menu">
+          <li class="active"><a href="./briefs.html">Briefes</a></li>
+          <li><a href="./createBrief.html">Create Brief</a></li>
+          <li>
+            <a title="Create Autoformation" href="./createAutoformation.html"
+              >Create Autoform...</a
+            >
+          </li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+        </ul>
+        <button id="logout">logout</button>
+      </aside>
+      <article>
+        <div class="container task-container" id="task-container"></div>
+      </article>
+    </section>
+    <section class="work" id="work">
+      <div class="container table">
+        <button class="close-btn" id="close-btn">close</button>
+        <div class="table-container">
+          <input type="hidden" id="task_id" />
+          <input type="hidden" id="student_id" />
+          <h3 class="title" id="taskTitle-w"></h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>Task Code</th>
+                <th>Github Link</th>
+                <th>Result</th>
+                <th>Point</th>
+                <th>Save</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <div id="notification" class="">
+      <p id="msg">msg dfsd sfdf sdf</p>
+    </div>
+    <script type="module" src="./../js/functions.js"></script>
+    <script type="module" src="./../js/teachersbreifs.js"></script>
+  </body>
+</html>

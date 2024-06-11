@@ -1,0 +1,46 @@
+.courses-title {
+  display: flex;
+  background-color: var(--gray-light);
+  justify-content: center;
+}
+
+.courses-title li {
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.courses-title li:nth-child(1) {
+  margin-left: 10px;
+}
+
+.courses-title li:hover,
+.courses-title li.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+table {
+  margin: auto;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+table tbody tr:nth-child(n) {
+  /* background-color: var(--gray-light-opacity); */
+  border-bottom: 1px solid var(--gray-light-opacity);
+}
+
+table tr th {
+  padding: 20px;
+  min-width: 150px;
+}
+
+table thead {
+  background-color: var(--gray-light);
+}
+
+tr.start {
+  background-color: var(--alert-b-g);
+}
+tr.end {
+  color: #aaa;
+}
